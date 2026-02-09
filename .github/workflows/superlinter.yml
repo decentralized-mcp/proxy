@@ -30,7 +30,7 @@ jobs:
             echo 'GITHUB_BEFORE_SHA=${{ github.event.pull_request.base.sha }}' >> "${GITHUB_ENV}"
           fi
       - name: Run Super Linter
-        uses: super-linter/super-linter@v7.3.0
+        uses: super-linter/super-linter@v8.3.1
         env:
           # ASCII Possum is cute, but not necessary
           SUPPRESS_POSSUM: true
